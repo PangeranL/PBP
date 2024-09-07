@@ -26,6 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "Hobi: Tidak ada yang dipilih <br>";
         }
+
+        // Sembunyikan Password
         echo "Password: ****** <br>";
     }
 }
