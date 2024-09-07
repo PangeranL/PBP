@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hobi = isset($_POST['hobi']) ? $_POST['hobi'] : [];
     $password = htmlspecialchars($_POST['password']);
 
-    // Validasi input (contoh sederhana)
+    // Validasi input 
     if (empty($username) || empty($email) || empty($perguruanTinggi) || empty($prodi) || empty($password)) {
         echo "Semua field harus diisi! <br>";
     } else {
@@ -26,8 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "Hobi: Tidak ada yang dipilih <br>";
         }
-
-        // Password disembunyikan (jangan tampilkan password dalam teks asli pada aplikasi nyata)
         echo "Password: ****** <br>";
     }
 }
